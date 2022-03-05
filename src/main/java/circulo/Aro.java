@@ -15,7 +15,7 @@ public class Aro {
      * 
      *@value 0.0 
      */
-    public final double LIMITERADIO = 0.0;
+    public static final double LIMITERADIO = 0.0;
 
     private int coordenadaX;
     private int coordenadaY;
