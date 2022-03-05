@@ -9,39 +9,42 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
+ * Clase de test para a clase Aro.
  * @author Laura
  */
 public class AroTest {
     
+    /**
+     * Constructor por defecto
+     */
     public AroTest() {
     }
     
     /**
-     * Test of setCoordenadaX method, of class Aro.
+     * Test do método setCoordenadaX.
      */
     @Test
     public void testsetCoordenadaX() {
-        System.out.println("setCoordenadaX");
+        System.out.println("test que proba o setCoordenadaX");
         int valorX = 0;
         Aro instance = new Aro();
         instance.setCoordenadaX(valorX);
     }
 
     /**
-     * Test of getCoordenadaX method, of class Aro.
+     * Test do método getCoordenadaX.
      */
     @Test
     public void testgetCoordenadaX() {
         System.out.println("getCoordenadaX");
         Aro instance = new Aro(0,0,0.1);
-        int expResult = 0;
-        int result = instance.getCoordenadaX();
-        assertEquals(expResult, result);
+        int resultadoEsperado = 0;
+        int resultado= instance.getCoordenadaX();
+        assertEquals(resultadoEsperado, resultado);
     }
 
     /**
-     * Test of setCoordenadaY method, of class Aro.
+     * Test do método setCoordenadaY.
      */
     @Test
     public void testsetCoordenadaY() {
@@ -52,19 +55,19 @@ public class AroTest {
     }
 
     /**
-     * Test of getCoordenadaY method, of class Aro.
+     * Test do método getCoordenadaY.
      */
     @Test
     public void testgetCoordenadaY() {
         System.out.println("setCoordenadaY");
         Aro instance = new Aro(0,0,0.1);
-        int expResult = 0;
-        int result = instance.getCoordenadaY();
-        assertEquals(expResult, result);
+        int resultadoEsperado = 0;
+        int resultado= instance.getCoordenadaY();
+        assertEquals(resultadoEsperado, resultado);
     }
 
     /**
-     * Test of setRadio method, of class Aro.
+     * Test do método setRadio.
      */
     @Test
     public void testsetRadio() {
@@ -76,61 +79,62 @@ public class AroTest {
     }
 
     /**
-     * Test of getRadio method, of class Aro.
+     * Test do método getRadio.
      */
+    
     @Test
     public void testgetRadio() {
         System.out.println("getRadio");
         Aro instance = new Aro(0,0,0.1);
-        double result = instance.getRadio();
-        assertEquals(0.1, result,0);
+        double resultado= instance.getRadio();
+        assertEquals(0.1, resultado,0);
 
         instance.setRadio(0.1);
-        result= instance.getRadio();
-        assertEquals(0.1, result,0);
+        resultado= instance.getRadio();
+        assertEquals(0.1, resultado,0);
 
         instance.setRadio(-0.1);
-        result= instance.getRadio();
-        assertEquals(0.0, result,0);
+        resultado= instance.getRadio();
+        assertEquals(0.0, resultado,0);
     }
 
     /**
-     * Test of obterDiametro method, of class Aro.
+     * Test do método obterDiametro.
      */
     @Test
     public void testObterDiametro() {
         System.out.println("obterDiametro");
         Aro instance = new Aro(0,0,0.1);
-        double result = instance.obterDiametro();
-        assertEquals(0.2, result,0);
+        double resultado= instance.obterDiametro();
+        assertEquals(0.2, resultado,0);
     }
 
     /**
-     * Test of obterCircunferencia method, of class Aro.
+     * Test do método obterCircunferencia.
      */
     @Test
     public void testObterCircunferencia() {
         System.out.println("obterCircunferencia");
         Aro instance = new Aro(0,0,0.1);
-        double expResult = 0.6283185;
-        double result = instance.obterCircunferencia();
-        assertEquals(expResult, result,1e-6);
+        double resultadoEsperado = 0.6283185;
+        double resultado= instance.obterCircunferencia();
+        assertEquals(resultadoEsperado, resultado,1e-6);
     }
 
     /**
-     * Test of obterSuperficie method, of class Aro.
+     * Test do método obterSuperficie.
      */
     @Test
     public void testObterSuperficie() {
         System.out.println("obterArea");
         Aro instance = new Aro(0,0,0.1);
-        double expResult = 0.0314159;
-        double result = instance.obterSuperficie();
-        assertEquals(expResult, result,1e-6);
+        double resultadoEsperado = 0.0314159;
+        double resultado= instance.obterSuperficie();
+        assertEquals(resultadoEsperado, resultado,1e-6);
     }
 
     /**
-     * Test of trasladarCentro method, of class Aro.
+     * Test do método trasladarCentro.
      */
     @Test
     public void testTrasladarCentro() {
